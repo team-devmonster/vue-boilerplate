@@ -1,0 +1,3 @@
+@import '@bynd/tailwind.preset/index.css';
+@source "../../../../../packages/ui/**/*.{ts,tsx,vue}";
+@source "../../../../../packages/buildcenter/**/*.{ts,tsx,vue}";

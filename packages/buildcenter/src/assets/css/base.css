@@ -1,0 +1,6 @@
+@import '@bynd/tailwind.preset/index.css';
+@source "../../../../../packages/ui/**/*.{ts,tsx,vue}";
+
+body {
+  font-size: 14px;
+}

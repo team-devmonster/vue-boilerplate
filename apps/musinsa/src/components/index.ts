@@ -1,0 +1,1 @@
+export { default as AppAsideMenu } from './layout/AppAsideMenu.vue'

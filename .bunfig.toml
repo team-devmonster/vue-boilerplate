@@ -1,0 +1,24 @@
+workspace = true
+
+[install]
+hoist = true
+
+[[workspace.projects]]
+name = "buildcenter"
+path = "packages/buildcenter"
+
+[[workspace.projects]]
+name = "shared"
+path = "packages/shared"
+
+[[workspace.projects]]
+name = "ui"
+path = "packages/ui"
+
+[[workspace.projects]]
+name = "tailwind.preset"
+path = "packages/tailwind.preset"
+
+[[workspace.projects]]
+name = "musinsa"
+path = "apps/musinsa"

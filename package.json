@@ -1,0 +1,30 @@
+{
+  "name": "bynd",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:musinsa": "cd apps/musinsa && bun dev",
+    "dev:bc": "cd packages/buildcenter && bun dev",
+    "dev:ui": "cd packages/ui && bun dev",
+    "build:bc": "cd packages/buildcenter && bun run build"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "cypress": "^14.3.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@bynd/buildcenter": "workspace:*",
+    "@bynd/shared": "workspace:*",
+    "@bynd/tailwind.preset": "workspace:*",
+    "@bynd/ui": "workspace:*"
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "@bynd/app.musinsa",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "dev": "vite --host",
+      "build": "run-p type-check \"build-only {@}\" --",
+      "preview": "vite preview",
+      "build-only": "vite build",
+      "type-check": "vue-tsc --build",
+      "lint": "eslint . --fix",
+      "format": "prettier --write src/",
+      "cy:open": "cypress open --component",
+      "cy:run": "cypress run --component"
+    },
+    "dependencies": {
+      "@bynd/shared": "^0.0.1",
+      "@bynd/ui": "^0.0.1",
+      "@bynd/tailwind.preset": "^1.0.0",
+      "@bynd/buildcenter": "0.0.1"
+    },
+    "devDependencies": {
+      "tailwindcss": "4.1.4",
+      "postcss": "^8.4.0",
+      "autoprefixer": "^10.4.0",
+      "typescript": "^5.3.0",
+      "vite": "^5.0.0"
+    }
+  }
+  

@@ -1,0 +1,9 @@
+{
+  "name": "@bynd/tailwind.preset",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "tailwindcss": "4.1.4"
+  }
+}

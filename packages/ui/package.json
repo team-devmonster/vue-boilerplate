@@ -1,0 +1,72 @@
+{
+  "name": "@bynd/ui",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+
+  "sideEffects": [
+    "**/*.css"
+  ],
+
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --build",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/",
+    "cy:open": "cypress open --component",
+    "cy:run": "cypress run --component"
+  },
+  "dependencies": {
+    "@bynd/shared": "0.0.1",
+    "@bynd/tailwind.preset": "1.0.0",
+    
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@primeuix/themes": "^1.0.1",
+    "@primevue/forms": "^4.3.3",
+    "@tailwindcss/postcss": "^4.1.0",
+    "lodash.clonedeep": "^4.5.0",
+    "pinia": "^3.0.1",
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "primelocale": "^2.1.2",
+    "primevue": "^4.3.3",
+    "tailwind-merge": "^3.1.0",
+    "tailwindcss-primeui": "^0.6.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.0",
+    "@primevue/auto-import-resolver": "^4.3.3",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.13.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.4.0",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.20.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "jiti": "^2.4.2",
+    "npm-run-all2": "^7.0.2",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.1",
+    "tailwindcss": "^4.1.4",
+    "typescript": "~5.7.3",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.2"
+  }
+}

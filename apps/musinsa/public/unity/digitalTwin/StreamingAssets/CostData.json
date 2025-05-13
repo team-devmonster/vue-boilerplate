@@ -1,0 +1,15 @@
+{
+    "infos":
+    {
+        "floor": 1,
+        "results": 
+        {
+            "roomNumber": 1,
+            "name": "심시스",
+            "maintenanceCost": 200000,
+            "rentalFee": 600000,
+            "noPaidMaintenanceCost": "1,2,3,4,5,6,7,8",
+            "noPaidRentalFee": "1,2,3,4,5,6,7,8"
+        }
+    }
+}
