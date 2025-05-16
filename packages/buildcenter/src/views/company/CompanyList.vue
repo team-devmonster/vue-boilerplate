@@ -3,7 +3,7 @@
     <PageTitle />
 
     <SearchFilter>
-      <PETable ref="form$" :schema="schema" v-model="form" />
+      <PETable :schema="schema" v-model="form" />
     </SearchFilter>
   </div>
 </template>
@@ -12,7 +12,6 @@
 import { onMounted, ref } from 'vue'
 import { PageTitle, SearchFilter, PETable } from '@bynd/ui/components'
 
-const form$ = ref(null)
 const defaultObject = {
   dateType: 'regDt',
   dateFrom: '',
